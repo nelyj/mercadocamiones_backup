@@ -1,3 +1,5 @@
+$primary-color: #222222;
+
 body{
   padding-top: 45px;
 
@@ -5,6 +7,86 @@ body{
     height: 55px;
   }
 
+  .modal {
+    overflow-y: auto !important;
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+    .modal-dialog {
+      right: auto;
+      left: 50%;
+      width: 600px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .login{
+      width: 300px;
+    }
+  }
+
+  .modal-content{
+    border-radius: 0px;
+    border: 0.5px solid #565656;
+    box-shadow: 0 0 25px 12.5px rgba(0,0,0,0.0);
+  }
+
+  .modal-footer{
+    padding: 19px 10px 20px;
+  }
+
+  .modal-footer > .btn{
+    border-radius: 1px;
+  }
+
+  input.form-control{
+    margin-bottom: 10px;
+  }
+
+  .form-control:focus{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color:darkgrey;
+  }
+
+  hr.login{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    width: 100%;
+  }
+
+  p.footer{
+    padding: 20px 10px;
+    font-size: 0.85em;
+  }
+
+  .alert{
+    text-align: center;
+    border-radius: 0px;
+    padding: 5px;
+    margin-bottom: 0px;
+    font-size: 0.85em;
+    font-weight: 700;
+  }
+
+  .alert-danger{
+    background-color: #B91C0F;
+    color: whitesmoke;
+    border:0px;
+  }
+
+  .modal-header{
+    background-color: $primary-color;
+    color: whitesmoke;
+  }
 }
 
 

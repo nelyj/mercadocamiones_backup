@@ -5,6 +5,9 @@
 
     %nav.collapse.navbar-collapse{role: "navigation"}
       %ul.nav.navbar-nav.pull-right
-        %li=link_to "Vender", "#"
-        %li=link_to "Inscribirse", "#"
-        %li=link_to "Ingresar", "#"
+        -if user_signed_in?
+
+        -else
+          %li=link_to "Vender", "#"
+          %li=link_to "Inscribirse", "#"
+          %li=link_to "Ingresar", login_path, remote: true
