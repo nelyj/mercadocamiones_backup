@@ -8,6 +8,4 @@
         -if user_signed_in?
 
         -else
-          %li=link_to "Vender", "#"
-          %li=link_to "Inscribirse", "#"
           %li=link_to "Ingresar", login_path, remote: true
